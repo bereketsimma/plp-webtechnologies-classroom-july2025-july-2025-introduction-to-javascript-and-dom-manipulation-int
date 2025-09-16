@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Responsive Forms with JS</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My HTML5 Showcase</h1>
+    <p class="subtitle">Exploring CSS, Flexbox, Grid, Responsiveness & JavaScript</p>
+  </header>
+
+  <main>
+    <!-- Features Section -->
+    <section class="card">
+      <h2>Features of HTML5</h2>
+      <ul id="features-list">
+        <li>Improved semantics with new tags</li>
+        <li>Native support for audio and video</li>
+        <li>Enhanced forms with validation</li>
+        <li>Better accessibility for users</li>
+      </ul>
+
+      <h3>Top 3 HTML5 Advantages</h3>
+      <ol id="advantages-list">
+        <li>Cross-platform compatibility</li>
+        <li>Built-in multimedia support</li>
+        <li>Improved user experience</li>
+      </ol>
+    </section>
+
+    <!-- Input Table Section -->
+    <section class="card">
+      <h2>Comparison of Input Types</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Input Type</th>
+            <th>Purpose</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>email</td>
+            <td>Validates email addresses</td>
+            <td><input type="email" placeholder="name@example.com" /></td>
+          </tr>
+          <tr>
+            <td>number</td>
+            <td>Accepts numeric values</td>
+            <td><input type="number" min="0" max="100" /></td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td>Pick a date</td>
+            <td><input type="date" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section class="card media-section">
+      <h2>Embedded Media</h2>
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Sample Image" />
+        <figcaption>Sample image demonstrating HTML5 media embedding.</figcaption>
+      </figure>
+      <figure>
+        <audio controls>
+          <source src="sample-audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Sample audio track.</figcaption>
+      </figure>
+      <figure>
+        <video controls>
+          <source src="sample-video.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+        <figcaption>Sample video demonstration.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Form Section -->
+    <section class="card">
+      <h2>User Registration Form</h2>
+      <form action="#" method="post" class="responsive-form" id="registration-form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name" />
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="name@example.com" autocomplete="email" />
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="5" placeholder="Choose a username" />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="8" pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" placeholder="At least 8 characters with a number and uppercase letter" />
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+          <label><input type="checkbox" name="newsletter" checked /> Subscribe to our newsletter</label>
+          <label><input type="radio" name="updates" value="yes" required /> Receive updates</label>
+          <label><input type="radio" name="updates" value="no" /> Do not receive updates</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself"></textarea>
+        </fieldset>
+
+        <div class="form-buttons">
+          <input type="submit" value="Register" />
+          <input type="reset" value="Clear" />
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My HTML5 Showcase Page</p>
+  </footer>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
